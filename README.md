@@ -14,7 +14,13 @@ Project consists of a simple PowerShell script that walks the user through "zero
 
 - <b>Windows 10</b> (21H2)
 
-<h2>Program walk-through:</h2>
+<h2>Lab Walk-Through:</h2>
+
+<h2>Installing and Configuring pfsense:</h2>
+
+1. Installed a community edition pfSense ISO file from https://www.pfsense.org/download/
+2. Launched VMware Workstation Pro 16 and clicked on "Create a New Virtual Machine"
+3. Extracted the downloaded iso zip file to a seperate folder and selected the iso image in Workstation Pro
 
 <p align="center">
 Launch the utility: <br/>
