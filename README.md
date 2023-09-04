@@ -36,9 +36,14 @@ Linking the Network Adapters to VMnet(s): <br/>
 8. Selected all the default options when booting the pfSense installed and rebooted
 9. Assigned the interfaces (See screenshot below)
 <p align="center">
-Assigning the interfaces in pfSense: <br/>
-<img src=""/>
+Linking the Network Adapters to VMnet(s): <br/>
+<img src="https://i.imgur.com/EWqodQw.png"/>
 
+10. Selected "y" to proceed and then configured the LAN IPv4 address as 192.168.1.1
+11. Typed "24" as the LAN IPv4 subnet bit count (255.255.255.0) and entered the start address range as "192.168.1.11" and the end address range as "192.168.1.200"
+<p align="center">
+Configuring IP address for the LAN: <br/>
+<img src="https://i.imgur.com/FwNolCC.png"/>
 
 <!--
  ```diff
