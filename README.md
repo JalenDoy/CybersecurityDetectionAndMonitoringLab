@@ -45,6 +45,11 @@ Linking the Network Adapters to VMnet(s): <br/>
 Configuring IP address for the LAN: <br/>
 <img src="https://i.imgur.com/FwNolCC.png"/>
 
+12. Repeated the same steps as step 10 for the rest of the interfaces but changed the IP addresses. em4 was left blank as it will serve as the span port. 
+<p align="center">
+Configuring IP address for the interfaces: <br/>
+<img src="https://i.imgur.com/rFUothA.png"/>
+
 <!--
  ```diff
 - text in red
