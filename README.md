@@ -50,6 +50,20 @@ Configuring IP address for the LAN: <br/>
 Configuring IP address for the interfaces: <br/>
 <img src="https://i.imgur.com/rFUothA.png"/>
 
+<h2>Installing and Configuring Security Onion:</h2>
+
+1. Downloaded the Security Onion ISO file from https://github.com/Security-Onion-Solutions/securityonion/blob/master/VERIFY_ISO.md
+2. Launched VMware Workstation Pro and selected "Create a New Virtual Machine" and selected the Security Onion ISO file when prompted
+3. Changed the virtual machine name to  "SecOnion" and chose my portable SSD drive as the save location
+4. Selected the following requirements for the virtual machine:
+   - 250GB Maximum Disk Space (Security Onion recommends 200GB)
+    - Single Virtual Disk File
+    - 16GM of ram (Security Onion recommends 12GB)
+    - 2 Additional Network Adapters (Network Adapter 2 is set to VMnet4 and Network Adapter 3 is set to VMnet 5)
+
+<p align="center">
+Final configuration of Security Onion Virtual Machine: <br/>
+<img src="https://i.imgur.com/lRwmFUQ.png"/>
 <!--
  ```diff
 - text in red
