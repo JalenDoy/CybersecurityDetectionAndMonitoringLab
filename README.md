@@ -64,6 +64,9 @@ Configuring IP address for the interfaces: <br/>
 <p align="center">
 Final configuration of Security Onion Virtual Machine: <br/>
 <img src="https://i.imgur.com/lRwmFUQ.png"/>
+
+5. Launch the SecOnion Virtual Machine
+6. Press "Enter" to start the installation 
 <!--
  ```diff
 - text in red
