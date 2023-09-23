@@ -66,7 +66,20 @@ Final configuration of Security Onion Virtual Machine: <br/>
 <img src="https://i.imgur.com/lRwmFUQ.png"/>
 
 5. Launch the SecOnion Virtual Machine
-6. Press "Enter" to start the installation 
+6. Press "Enter" to start the installation
+7. The installationg process will start and once the scripts are installed it will ask me to create a username and password
+8. After creating the username and password, the system will reboot and login to continue to the Security Onion Setup process
+
+<p align="center">
+Security Onion Setup: <br/>
+<img src="https://i.imgur.com/3kmJ2tA.png"/>
+
+9. When asked "Would you like to continue" I will select "Yes"
+10. Select "Install Run the standard Security Onion installation"
+11. Choose "EVAL" as the install type
+12. Type "Enter" when prompted to agree to the terms of the Elastic License
+13. Type in the hostname of your choosing. I chose 'seconion"
+14. Selected "ens33" (first interface that was available" as the Management Link
 <!--
  ```diff
 - text in red
