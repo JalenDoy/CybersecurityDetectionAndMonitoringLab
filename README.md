@@ -91,7 +91,25 @@ Security Onion Setup: <br/>
 23. Enter a email address for the Administrator Account for the Web Interface. I chose my personal email address. When prompted to enter a password, ensure that it is something that you can remember.
 24. When prompted on how to access the Web Interfaces, choose the "IP" option and then click "Yes" to configure NTP servers and keep the default options.
 25. Select "No" when asked to run "so-allow". This will be configured later.
-26. The next screen will show all the services we have access to, make sure to take a screenshot of this page and save it. Press "TAB" to Select "Yes" to continue. This Installation will take a long time so grab some coffee and take a break!
+26. The next screen will show all the services we have access to, make sure to take a screenshot of this page and save it. Press "TAB" to Select "Yes" to continue. This Installation will take a long time so head to the "Installing Ubuntu Desktop" section that is located below before the Security Onion installion completes. 
+27. After installing Ubuntu Desktop, go back to the SecOnion virtual machine so that so-allow can be "configured"
+
+<p align="center">
+Security Onion Virtual Machine: <br/>
+<img src="https://i.imgur.com/pfi9tus.png"/>
+
+28. Type the following command "sudo so-allow" and enter the password. When asked for the role, type "A" and then the IP address of the Ubuntu Desktop Machine. When completed the following screen should appear.
+
+<p align="center">
+Ubuntu Desktop allowed access: <br/>
+<img src="https://i.imgur.com/JhpVheP.png"/>
+
+29. Go to the Ubuntu machine, open a web browser and enter the IP address of the Security Onion Virtual Machine. Select "Accept Risk and Continue"
+30. You should be at the Security Onion website where there is a prompt asking for a email address and password. These are the credentials that we setup earlier. Enter them in and you should be able to access your Security Onion Web Interface.
+
+<p align="center">
+Security Onion Web Interface: <br/>
+<img src="https://i.imgur.com/blvcD80.png"/>  
 
 <h2>Installing Ubuntu Desktop:</h2>
 While Security Onion is installing, Ubuntu Desktop will be downloaded. Ubuntu will be used to access Security Onion. 
@@ -105,7 +123,9 @@ While Security Onion is installing, Ubuntu Desktop will be downloaded. Ubuntu wi
 4. Enter "SecurityOnionMgmt" as the Virtual Machine net and enter the following settings:
     - Maximum Disk Size: 20GB
     - Split Virtual Disk into Multiple Files
-    - Keep the default hardware settings and click "Finish". The Ubuntu machine will boot up after creation. 
+    - Keep the default hardware settings and click "Finish". The Ubuntu machine will boot up after creation.
+  5. Once installed, open a terminal and type the command "sudo apt install net-tools". Enter the password for you account and once the installation is done, type "ifconfig" and make a not of the "inet" IP address.
+  6. Procced to the rest of the Security Onion Installation that is located above. 
 <!--
  ```diff
 - text in red
