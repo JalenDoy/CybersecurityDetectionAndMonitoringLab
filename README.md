@@ -80,6 +80,18 @@ Security Onion Setup: <br/>
 12. Type "Enter" when prompted to agree to the terms of the Elastic License
 13. Type in the hostname of your choosing. I chose 'seconion"
 14. Selected "ens33" (first interface that was available" as the Management Link
+15. At the "Choose how to set up your management interface", press spacebar on "DHCP" and them press "Enter". At the warning screen go ahead and select "Yes" and then "Ok".
+16. At the "How should this manager be installed?" screen, select "Standard" and press "Enter". At the bottom left "Restarting Docker" should appear.
+17. At the "How would you like to connect to the Internet?" screen, select "Direct" and press "Enter".
+18. At the "Please add NICs to the Monitor Interface" select "ens34".
+19. Choose "Automatic" for the OS patch schedule
+20. Leave the default options when asked about Home Networks and CIDR blocks.
+21. Press "Enter" when notifed that installing more services requires using more RAM.
+22. Press "Enter" to keep the default Docker IP range.
+23. Enter a email address for the Administrator Account for the Web Interface. I chose my personal email address. When prompted to enter a password, ensure that it is something that you can remember.
+24. When prompted on how to access the Web Interfaces, choose the "IP" option and then click "Yes" to configure NTP servers and keep the default options.
+25. Select "No" when asked to run "so-allow". This will be configured later.
+26. The next screen will show all the services we have access to, make sure to take a screenshot of this page and save it. Press "TAB" to Select "Yes" to continue. This Installation will take a long time so grab some coffee and take a break!
 <!--
  ```diff
 - text in red
