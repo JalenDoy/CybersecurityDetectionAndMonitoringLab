@@ -92,6 +92,20 @@ Security Onion Setup: <br/>
 24. When prompted on how to access the Web Interfaces, choose the "IP" option and then click "Yes" to configure NTP servers and keep the default options.
 25. Select "No" when asked to run "so-allow". This will be configured later.
 26. The next screen will show all the services we have access to, make sure to take a screenshot of this page and save it. Press "TAB" to Select "Yes" to continue. This Installation will take a long time so grab some coffee and take a break!
+
+<h2>Installing Ubuntu Desktop:</h2>
+While Security Onion is installing, Ubuntu Desktop will be downloaded. Ubuntu will be used to access Security Onion. 
+
+1. Download Ubuntu Desktop here: https://ubuntu.com/download/desktop
+2. Once downloaded, navigate to VMWorkstation PRO and click "Create a New Virtual Machine".
+3. Select the Ubuntu ISO image that was downloaded and enter the following:
+    - Full Name: SecOnionMgmt
+    - Username: Username of your choosing
+    - Password: Password of your choosing
+4. Enter "SecurityOnionMgmt" as the Virtual Machine net and enter the following settings:
+    - Maximum Disk Size: 20GB
+    - Split Virtual Disk into Multiple Files
+    - Keep the default hardware settings and click "Finish". The Ubuntu machine will boot up after creation. 
 <!--
  ```diff
 - text in red
