@@ -125,7 +125,31 @@ While Security Onion is installing, Ubuntu Desktop will be downloaded. Ubuntu wi
     - Split Virtual Disk into Multiple Files
     - Keep the default hardware settings and click "Finish". The Ubuntu machine will boot up after creation.
   5. Once installed, open a terminal and type the command "sudo apt install net-tools". Enter the password for you account and once the installation is done, type "ifconfig" and make a not of the "inet" IP address.
-  6. Procced to the rest of the Security Onion Installation that is located above. 
+  6. Procced to the rest of the Security Onion Installation that is located above.
+
+<h2>Installing Kali Linux:</h2>
+
+1. Download the Kali Linux VMWare 64-bit ISO image from here: https://www.kali.org/get-kali/#kali-virtual-machines
+2. Once downloaded, search through the Kali linux folder contents, and double click on the vmx file. This will load a prebuilt Kali Linux machine in VMWare Workstation PRO.
+
+<p align="center">
+Kali Linux vmx file: <br/>
+<img src="https://i.imgur.com/zhY606m.png"/>  
+
+3. Once loaded, click "Edit Virtual Machine Settings" and click "add", and choose "Network Adapter"
+4. Click on the added network adapter (Network Adapter 2), Under "Network Connection" section click "custom" and in the drop down menu select "VMnet2".
+5. If the virtual machine is not using 4GB of RAM. Click on "Memory" and adjust the slider to "4GB" or "4096MB" and then click "OK".
+
+<p align="center">
+Kali Linux Configuration Settings: <br/>
+<img src="https://i.imgur.com/Uivnoeb.png"/>  
+
+6. Now "Power On" the virtual machine
+7. To login, enter the following credentials:
+    - Username: kali
+    - Password" Kali
+8. Now we have a fully installed Kali Linux virtual machine for our network!
+
 <!--
  ```diff
 - text in red
