@@ -198,7 +198,7 @@ pfSense Interfaces: <br/>
 22. Click "Save".
 23. At the top of the pfSense web application, click on the "Firewall" drop down menu and click on "Rules". Under **WAN**, click on "Add". From here we will enter the following information:
     - Protocol: Any
-24. Click "Save".
+24. Click "Save" and then "Apply Changes". 
 
 <p align="center">
 Firewall Rule: <br/>
