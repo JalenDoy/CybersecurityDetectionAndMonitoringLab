@@ -150,7 +150,7 @@ Kali Linux Configuration Settings: <br/>
     - Password" Kali
 8. Now we have a fully installed Kali Linux virtual machine for our network!
 
-<h2> Configuring pfSense Interface: </h2>
+<h2> Configuring pfSense Interfaces: </h2>
 
 1. In WMWare Workstation Pro, boot up the Kali Linux and pfSense virtual machines.
 2. Once booted, on the Kali machine open a new browser and enter "192.168.1.1" in the url search bar which should bring up the pfSense login page. Enter the following:
@@ -164,15 +164,33 @@ Kali Linux Configuration Settings: <br/>
     - Block private networks from entering via WAN
     - Block non-internet routed networks from entering via WAN
 6. Click "Next". On the **Configure Lan Interface** page click "Next"
-7. On the **Set Admin WebGUI Password**, Enter a new password. Once done click "Next". If asked to save password click "Dont Save". Next is to click on "Reload" so the new changes can be put into effect. Once reloaded, click "Finish".
+7. On the **Set Admin WebGUI Password** page, Enter a new password. Once done click "Next". If asked to save password click "Dont Save". Next is to click on "Reload" so the new changes can be put into effect. Once reloaded, click "Finish".
 8. At the top of the pfSense web application, click on the "Interfaces" drop down menu and click on "Lan". From here we will enter the following information for the Kali Linux machine:
    - Description: Kali
    - IPv6 Configuration Type: Static IPv6
    - IPv6 Address: ::1
 9. Click "Save Changes". Next click on "Services" drop down menu in the top right and click on "DHCPv6 Server & RA". Click on "Router Advertisements" and change the following:
      - Router Mode: Disabled
-   
+10. Next we will go back to our kali interface and changed **IPv6 Configuration Type** to "None". Click "Save".
+11. At the top of the pfSense web application, click on the "Interfaces" drop down menu and click on "OPT1". From here we will enter the following information:
+    - Description: VictimNetwork
+12. Click "Save" and then "Save Changes". 
+13. At the top of the pfSense web application, click on the "Interfaces" drop down menu and click on "OPT2". From here we will enter the following information:
+    - Description: SecOnion
+14. Click "Save" and then "Save Changes".
+15. At the top of the pfSense web application, click on the "Interfaces" drop down menu and click on "OPT3". From here we will enter the following information:
+    - Enable: Enable Interface (Check the box)
+    - Description: SpanPort
+16. Click "Save" and then "Save Changes".
+17. At the top of the pfSense web application, click on the "Interfaces" drop down menu and click on "OPT4". From here we will enter the following information:
+    - Description: Splunk
+18.  Click "Save" and then "Save Changes".
+19. At the top of the pfSense web application, click on the "Interfaces" drop down menu and click on "Assignments". From here we will check to ensure all the interfaces are correctly configured.
 
+<p align="center">
+pfSense Interfaces: <br/>
+<img src="https://i.imgur.com/nLeYDsw.png"/>    
+     
 <!--
  ```diff
 - text in red
