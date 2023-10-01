@@ -190,7 +190,19 @@ Kali Linux Configuration Settings: <br/>
 <p align="center">
 pfSense Interfaces: <br/>
 <img src="https://i.imgur.com/nLeYDsw.png"/>    
-     
+
+20. At the top of the pfSense web application, click on the "Bridges" drop down menu and click on "Add". From here we will enter the following information:
+    - Member Interface: VICTIMNETWORK
+21. Click on "Show Advanced". Enter the following:
+    - Span Port: SPANPORT
+22. Click "Save".
+23. At the top of the pfSense web application, click on the "Firewall" drop down menu and click on "Rules". Under **WAN**, click on "Add". From here we will enter the following information:
+    - Protocol: Any
+24. Click "Save".
+
+<p align="center">
+Firewall Rule: <br/>
+<img src="https://i.imgur.com/KCOTzxP.png"/>   
 <!--
  ```diff
 - text in red
