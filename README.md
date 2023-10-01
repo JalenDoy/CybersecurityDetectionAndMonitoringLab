@@ -150,6 +150,21 @@ Kali Linux Configuration Settings: <br/>
     - Password" Kali
 8. Now we have a fully installed Kali Linux virtual machine for our network!
 
+<h2> Configuring pfSense Interface: </h2>
+
+1. In WMWare Workstation Pro, boot up the Kali Linux and pfSense virtual machines.
+2. Once booted, on the Kali machine open a new browser and enter "192.168.1.1" in the url search bar which should bring up the pfSense login page. Enter the following:
+    - Username: admin
+    - Password: pfsense
+3. Once logged in, click the "system" drop down menu and then click on "setup wizard". From here click next twice until you reach the **General Information** page. On this page you will enter the following:
+    - Primary DNS Server: 8.8.8.8
+    - Secondary DNS Server: 4.4.4.4
+4. Click "Next". On the **Time Information** page, select your time zone. Click "Next".
+5. On the **Configure WAN Interface** page, unclick the following at the bottom:
+    - Block private networks from entering via WAN
+    - Block non-internet routed networks from entering via WAN
+   
+
 <!--
  ```diff
 - text in red
