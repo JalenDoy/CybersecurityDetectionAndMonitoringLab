@@ -160,9 +160,17 @@ Kali Linux Configuration Settings: <br/>
     - Primary DNS Server: 8.8.8.8
     - Secondary DNS Server: 4.4.4.4
 4. Click "Next". On the **Time Information** page, select your time zone. Click "Next".
-5. On the **Configure WAN Interface** page, unclick the following at the bottom:
+5. On the **Configure WAN Interface** page, **uncheck** the following at the bottom:
     - Block private networks from entering via WAN
     - Block non-internet routed networks from entering via WAN
+6. Click "Next". On the **Configure Lan Interface** page click "Next"
+7. On the **Set Admin WebGUI Password**, Enter a new password. Once done click "Next". If asked to save password click "Dont Save". Next is to click on "Reload" so the new changes can be put into effect. Once reloaded, click "Finish".
+8. At the top of the pfSense web application, click on the "Interfaces" drop down menu and click on "Lan". From here we will enter the following information for the Kali Linux machine:
+   - Description: Kali
+   - IPv6 Configuration Type: Static IPv6
+   - IPv6 Address: ::1
+9. Click "Save Changes". Next click on "Services" drop down menu in the top right and click on "DHCPv6 Server & RA". Click on "Router Advertisements" and change the following:
+     - Router Mode: Disabled
    
 
 <!--
