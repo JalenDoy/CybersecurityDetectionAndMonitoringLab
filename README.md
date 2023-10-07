@@ -253,7 +253,10 @@ Active Directory User: <br/>
 3. On the homepage of VMware click on **Create a New Virtual Machine** and choose the **Typical** option. Select the Windows 10 Enterprise ISO image that can be downloaded from here" https://www.microsoft.com/en-us/evalcenter/download-windows-10-enterprise.
 4. Click **Next**, **Next**, and then **Okay**. Change the name to **Windows 10**, and click **Next** and **Next** again. Now click on **Customize Hardware**. Set the **Network Adapter** to **VMnet3** and click **Okay**. Now uncheck **Power on this virtual machine after creation** and click **Finish**.
 5. Once the Windows 10 machine is created, click on **Edit virtual machine settings**, click on **Floppy**, and then select the **Remove** button at the bottom and click **Ok**.
-6. Now boot up the machine and prepare to press any key on the keyboard when prompted to. Choose a language and then press **Next**. Check the box next to **I accept the license terms** and click **next**. Now select **Custom: Install Windows only (Advanced)** and click **next**. The installation process should start. 
+6. Now boot up the machine and prepare to press any key on the keyboard when prompted to. Choose a language and then press **Next**. Check the box next to **I accept the license terms** and click **next**. Now select **Custom: Install Windows only (Advanced)** and click **next**. The installation process should start and the machine will reboot.
+7. Once restarted, choose a region when prompted to. Choose the correct keyboard layout. Select in the bottom left **I do not have internet**. Create a name and Password for the PC and click **Next**. When prompted to select security questions, make every answer the same and simple so that it is easy to remember.
+8. Turn off all the privacy settings for the device when prompted and click **Accept**. Click **Not now** when prompted about Cortana.
+9. Once the machine loads, right click on the Windows 10 virtual machine in VMware and select **Install VMware Tools**. Click on the **DVD Drive (D:) VMware Tools** popup and double click on **Run setup64.exe**
 
 <!--
  ```diff
