@@ -229,8 +229,22 @@ Windows Drive Partition Setup: <br/>
 16. Create a password and then select "next" until the **Installation** screen appears and then select "Install". The service will now reboot.
 17. Login again. In the top right, click "Manage" and then "Add roles and features". Click "next" until the **Select server roles** page appears. Click on "Active Directory Certificate Services" and then click "Add features". Now click "next" until the **Confirm installation selections** page appears and click "Restart the destination server automatically if required". Then select "Yes" and then "Install".
 18. Refresh the dashboard and then click the flag in the top right and select "Configure Active Directory Certificate Services on the Destination server". On the **Role Services** screen select "certificate authority" and then click "next".
-19. Click next until the **Validity Period** screen appears". Change it to "99" years and then click next until the **Confirmation** screen appears and then select "Configure". 
-   
+19. Click next until the **Validity Period** screen appears". Change it to "99" years and then click next until the **Confirmation** screen appears and then select "Configure". Once it finishes, manually restart windows be click on the start menu on the bottom left and then select "restart". 
+20. Now a Active Directory user will be created by selection "Tools" in the top right and then clicking on "Active Directory Users and Computers". On the left pane, select the domain that was created, right click on "Users", and then select "New" and lastly "User". Enter any information for the new user, an Example is listed below.
+
+<p align="center">
+Active Directory User: <br/>
+<img src="https://i.imgur.com/uoRd0Wf.png"/> 
+
+21. Ensure to choose a easy and simple password. Nothing complicated for brute force exercises. Uncheck "User must change password at next logon" and check "Password never expires". Click "next" and then "finish".
+22. Once done, the firewall must be turned off. This is to ensure that the lab has weak configuration and vulnerabilities to be exploited as this is a lab environment built for learning. Search for "Firewall" in the Windows search bar and then click on "Windows Defender Firewall". Now Turn everything off and click "Okay".
+23. Now its time to add pfSense as the default gateway. Search for "Control Panel" in the Windows search bar and click on "Control Panel". Next click on "Network and Internet", then "Network and Sharing Center", and on the left hand panel choose "Change adapter settings". Right click on **Ethernet0** go to **Properties** and double click on **Internet Protocol Version 4 (TCP/IPv4) Properties**.
+24. Select **Use the following IP address:** and enter the following configurations:
+    - IP Address: 192.168.2.10
+    - Subnet Mask: 255.255.255.0
+    - Default Gateway: 192.168.2.1
+    - Preferred DNS server: 192.168.2.1
+25. Now click "Okay" until all of the popups are gone. 
 <!--
  ```diff
 - text in red
