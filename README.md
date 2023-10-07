@@ -226,7 +226,10 @@ Windows Drive Partition Setup: <br/>
 13. Login after the restart and click the start menu and then select settings in the bottom left. Search for "PC Name" and then click on "Rename your PC". Rename the PC to anything but put "-DC" at the end to signify that this host is the Windows Domain Controller. Restart the machine.
 14. Login again. In the top right, click "Manage" and then "Add roles and features". Click "next" until the **Select server roles** page appears. Click on "Active Directory Domain Features" and then click "Add features". Now click "next" until the **Confirm installation selections** page appears and click "Install".
 15. When the Installaion is finished, click on the flag icon in the top right and then click on "Promote this server to a domain controller". Now select "Add a new forest" and specify a root domain name. It can be any name aslong as it is followed by ".local". Click "Next".
-16. Create a password and then select "next" until the **Installation** screen appears and then select "Install". 
+16. Create a password and then select "next" until the **Installation** screen appears and then select "Install". The service will now reboot.
+17. Login again. In the top right, click "Manage" and then "Add roles and features". Click "next" until the **Select server roles** page appears. Click on "Active Directory Certificate Services" and then click "Add features". Now click "next" until the **Confirm installation selections** page appears and click "Restart the destination server automatically if required". Then select "Yes" and then "Install".
+18. Refresh the dashboard and then click the flag in the top right and select "Configure Active Directory Certificate Services on the Destination server". On the **Role Services** screen select "certificate authority" and then click "next".
+19. Click next until the **Validity Period** screen appears". Change it to "99" years and then click next until the **Confirmation** screen appears and then select "Configure". 
    
 <!--
  ```diff
