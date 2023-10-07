@@ -211,7 +211,23 @@ Firewall Rule: <br/>
 3. Click "Next" and select the Windows Server ISO image that was just downloaded. Ignore the screen asking for a product key and click "next" and then "next" again.
 4. Choose any location to install the Virtual Machine. Now choose 60GB for Maximum Disk Size and ensure the radio button next to "Split virtual disk into multiple files" is selected. Click "next". 
 5. Select customize harder and click on "Network Adapter section in the left pane" then select "Custom: Specific virtual network" and select "VMnet3". Click "close" and then "finish".
-6. At the home screen of VMWare Workstation Pro, On the Windows Server 2019 machine. Click "edit virtual machine settings" and remove "Floppy" from the settings. Now power on the Virtual Machine. 
+6. At the home screen of VMWare Workstation Pro, On the Windows Server 2019 machine. Click "edit virtual machine settings" and remove "Floppy" from the settings. Now power on the Virtual Machine.
+7. When booting the machine, ensure to press any key when prompted to, to start the installation process. Click "next" on the language and time screen and then click "install now".
+8. When choosing which operating system to install, select "Windows Server 2019 Standard Evaluation (Desktop Experiance)". Click the box to check "I accept the license terms".
+9. On the next screen click "custom". Now select "New" at the bottom of the screen and then click "apply". Click "ok". THe following screen should appear,  if it does then click "finish". Windows Server should now start the installation process. 
+
+<p align="center">
+Windows Drive Partition Setup: <br/>
+<img src="https://i.imgur.com/tdf60fL.png"/> 
+
+10. When prompted, create a password for the windwows administrator account and then click "next". Now sign into the account.
+11. In the left ov VMware. Click on "VM" and then select "Install VM Tools". CLick on the "DVD Drive (D:) VMware Tools popup in the bottom right of the screen and double click "Run setup64.exe".
+12. Now follow the next few steps. Click "next". Choose "Complete" for the type of install, then "next", and then "finish". Aftwards the resolution should be fixed and fit the entire screen. Now restart the Virtual Machine.
+13. Login after the restart and click the start menu and then select settings in the bottom left. Search for "PC Name" and then click on "Rename your PC". Rename the PC to anything but put "-DC" at the end to signify that this host is the Windows Domain Controller. Restart the machine.
+14. Login again. In the top right, click "Manage" and then "Add roles and features". Click "next" until the **Select server roles** page appears. Click on "Active Directory Domain Features" and then click "Add features". Now click "next" until the **Confirm installation selections** page appears and click "Install".
+15. When the Installaion is finished, click on the flag icon in the top right and then click on "Promote this server to a domain controller". Now select "Add a new forest" and specify a root domain name. It can be any name aslong as it is followed by ".local". Click "Next".
+16. Create a password and then select "next" until the **Installation** screen appears and then select "Install". 
+   
 <!--
  ```diff
 - text in red
