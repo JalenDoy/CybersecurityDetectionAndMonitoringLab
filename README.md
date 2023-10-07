@@ -202,7 +202,16 @@ pfSense Interfaces: <br/>
 
 <p align="center">
 Firewall Rule: <br/>
-<img src="https://i.imgur.com/KCOTzxP.png"/>   
+<img src="https://i.imgur.com/KCOTzxP.png"/> 
+
+<h2> Installing Windows Server 2019 and Creating an Active Directory Environment: </h2>
+
+1. Downloaded Windows Server 2019 ISO image Evaluation from: https://www.microsoft.com/en-us/evalcenter/evaluate-windows-server-2019.
+2. Open VMWare Workstation Pro and select "Create a New Virtual Machine".
+3. Click "Next" and select the Windows Server ISO image that was just downloaded. Ignore the screen asking for a product key and click "next" and then "next" again.
+4. Choose any location to install the Virtual Machine. Now choose 60GB for Maximum Disk Size and ensure the radio button next to "Split virtual disk into multiple files" is selected. Click "next". 
+5. Select customize harder and click on "Network Adapter section in the left pane" then select "Custom: Specific virtual network" and select "VMnet3". Click "close" and then "finish".
+6. At the home screen of VMWare Workstation Pro, On the Windows Server 2019 machine. Click "edit virtual machine settings" and remove "Floppy" from the settings. Now power on the Virtual Machine. 
 <!--
  ```diff
 - text in red
