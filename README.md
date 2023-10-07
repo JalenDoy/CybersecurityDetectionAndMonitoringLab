@@ -256,7 +256,19 @@ Active Directory User: <br/>
 6. Now boot up the machine and prepare to press any key on the keyboard when prompted to. Choose a language and then press **Next**. Check the box next to **I accept the license terms** and click **next**. Now select **Custom: Install Windows only (Advanced)** and click **next**. The installation process should start and the machine will reboot.
 7. Once restarted, choose a region when prompted to. Choose the correct keyboard layout. Select in the bottom left **I do not have internet**. Create a name and Password for the PC and click **Next**. When prompted to select security questions, make every answer the same and simple so that it is easy to remember.
 8. Turn off all the privacy settings for the device when prompted and click **Accept**. Click **Not now** when prompted about Cortana.
-9. Once the machine loads, right click on the Windows 10 virtual machine in VMware and select **Install VMware Tools**. Click on the **DVD Drive (D:) VMware Tools** popup and double click on **Run setup64.exe**
+9. Once the machine loads, right click on the Windows 10 virtual machine in VMware and select **Install VMware Tools** and then click on **Install**. Click on the **DVD Drive (D:) VMware Tools** popup and double click on **Run setup64.exe**. Click **Yes**.
+10. When the **VMware Tools Setup** page appears, click **Next**, **Complete**, and **Install**. Once it is done, click **Finish** and then **Yes** to restart the machine. Now Login.
+11. In the Windows search bar, search for "View your PC Name" and then click on it. Now click on **Rename your PC** and rename the PC to the user that was created on the Windows 10 Machine. Click **Next** and then **Restart Now**.
+12. Once rebooted, in the bottom right click on internet icon and then select **Network & Internet Settings**. Click on **Change Adapter Options**. Right click on **Ethernet0** and double click on **Internet Protocol Version 4 (TCP/IPv4) Properties**. Click on **Use the following IP address** and enter the following configurations:
+    - IP Address: 192.168.2.31
+    - Subnet Mask: 255.255.255.0
+    - Default Gateway: 192.168.2.1
+    - Preferred DNS Server: 192.168.2.10
+13. Press **Ok** and then **OK** again. In the Windows search bar, search for "Access work or School" and click on it. Next, click on the **Connect** button. When prompted to enter a email address, click **Join this device to a local Active Directory Domain** at the bottomn of the **Microsoft Account** pop-up.
+14. Now enter the name of the Domain that was created and click **Next**. When asked to enter a domain account, enter the following username and password"
+    - Username: Administrator
+    - Password: (Any passowrd of your choosing as long as it is easy to remember)
+15. Click **Ok** and then **Skip** and lastly **Restart Now**. Once rebooted, log back in and then click on the Windows Server 2019 Virtual Machine. In the top right click on **Tools**, and then **Active Directory Users and Computers** and then double click on **Computers** to ensure that the new user was added. 
 
 <!--
  ```diff
