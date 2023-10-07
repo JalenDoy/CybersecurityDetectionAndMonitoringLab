@@ -245,6 +245,16 @@ Active Directory User: <br/>
     - Default Gateway: 192.168.2.1
     - Preferred DNS server: 192.168.2.1
 25. Now click "Okay" until all of the popups are gone. 
+
+<h2>Installing and Configuring a Windows 10 Host:</h2>
+
+1. Boot up the Kali Linux and pfSense virtual machines and access the pfSense interface using the Kali machine. Open a web browser and type in **192.168.1.1** and then login to the pfSense admin account.
+2. Go to **Servers** and then click on **DHCP Server** and select **VICTIMNETWORK**. From here, go to the **Server** section and add the IP address (192.168.2.10) of the Domain Controller as the DNS server. Next scroll down to **Other Options** section and next to **Domain Name** enter the name of the Domain Controller that was created. 
+3. On the homepage of VMware click on **Create a New Virtual Machine** and choose the **Typical** option. Select the Windows 10 Enterprise ISO image that can be downloaded from here" https://www.microsoft.com/en-us/evalcenter/download-windows-10-enterprise.
+4. Click **Next**, **Next**, and then **Okay**. Change the name to **Windows 10**, and click **Next** and **Next** again. Now click on **Customize Hardware**. Set the **Network Adapter** to **VMnet3** and click **Okay**. Now uncheck **Power on this virtual machine after creation** and click **Finish**.
+5. Once the Windows 10 machine is created, click on **Edit virtual machine settings**, click on **Floppy**, and then select the **Remove** button at the bottom and click **Ok**.
+6. Now boot up the machine and prepare to press any key on the keyboard when prompted to. Choose a language and then press **Next**. Check the box next to **I accept the license terms** and click **next**. Now select **Custom: Install Windows only (Advanced)** and click **next**. The installation process should start. 
+
 <!--
  ```diff
 - text in red
