@@ -270,6 +270,16 @@ Active Directory User: <br/>
     - Password: (Any passowrd of your choosing as long as it is easy to remember)
 15. Click **Ok** and then **Skip** and lastly **Restart Now**. Once rebooted, log back in and then click on the Windows Server 2019 Virtual Machine. In the top right click on **Tools**, and then **Active Directory Users and Computers** and then double click on **Computers** to ensure that the new user was added. 
 
+<h2>Installing and Configuring Splunk:</h2>
+
+1. Download Ubuntu Server ISO image from here: https://ubuntu.com/download/server
+2. Launch VMware Workstation Pro and click on **Create a New Virtual Machine**. Choose **Typical** and then select that Ubuntu Server ISO image that was just downloaded. Change the Virutal Machine name to "Splunk". Click **Next**.
+3. Choose **100GB** as the maximum disk size and then select **Store Virtual Disk as a single file**. Click **Next**.
+4. Click on **Customize Hardware** and add an additional network adapter and set it to **VMnet6**. Click **Close** and then select **Power on this virtual machine after creation**. Click **Finish**.
+5. On the Splunk machine, continue with the installation process by selecting the correct language and keyboard layout. Select **Install Ubuntu**. Press **Enter** when at the network connections screen. Press **Enter** at the Proxy server screen.
+6. Press **Enter** on the Mirror address screen. On the **Guided Storage Configuration** screen, press down on the arrow keys and hover over **Done** and press **Enter**. On the next page press **Done** and then **Continue**.
+7. Choose any name, username, and password for the **Profile setup** screen but make sure the server name is "Splunk". Scroll down and press **Enter** on Done.
+8. Press **Enter** to skip upgrading to Ubuntu pro. Check the box asking to install **SSH** and then hover over **Done** and press **Enter**. 
 <!--
  ```diff
 - text in red
