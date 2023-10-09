@@ -279,7 +279,16 @@ Active Directory User: <br/>
 5. On the Splunk machine, continue with the installation process by selecting the correct language and keyboard layout. Select **Install Ubuntu**. Press **Enter** when at the network connections screen. Press **Enter** at the Proxy server screen.
 6. Press **Enter** on the Mirror address screen. On the **Guided Storage Configuration** screen, press down on the arrow keys and hover over **Done** and press **Enter**. On the next page press **Done** and then **Continue**.
 7. Choose any name, username, and password for the **Profile setup** screen but make sure the server name is "Splunk". Scroll down and press **Enter** on Done.
-8. Press **Enter** to skip upgrading to Ubuntu pro. Check the box asking to install **SSH** and then hover over **Done** and press **Enter**. 
+8. Press **Enter** to skip upgrading to Ubuntu pro. Check the box asking to install **SSH** and then hover over **Done** and press **Enter**. Arrow key down and Press **Enter** as no Server Snaps will be downloaded. The installation will start and the Virtual Machine will prompt to be rebooted. Under **View full log**, hover over **Reboot Now** and press **Enter**.
+
+<p align="center">
+Reboot Now: <br/>
+<img src="https://i.imgur.com/JKLV4yY.png"/> 
+
+9. When rebooted, log into Splunk user the credentials created. Once logged in, enter the command "sudo apt install taskel". Enter "y" when prompted to. **Tasksel** will allow for a **Graphical User Interface (GUI)** to be installed.
+10. Next enter the command "sudo apt install ubuntu-desktop". Enter **y** when prompted to.
+11. At the **Services to be restarted** screen, press **enter** and then type "Reboot" to restart the Virtual Machine. Once rebooted, ensure to log in again.
+12. Open a new web browser and navigate to **www.splunk.com**. In the top right corner of the page, click on **Free Splunk** and sign in or create an account. 
 <!--
  ```diff
 - text in red
