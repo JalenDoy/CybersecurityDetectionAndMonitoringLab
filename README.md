@@ -288,7 +288,24 @@ Reboot Now: <br/>
 9. When rebooted, log into Splunk user the credentials created. Once logged in, enter the command "sudo apt install taskel". Enter "y" when prompted to. **Tasksel** will allow for a **Graphical User Interface (GUI)** to be installed.
 10. Next enter the command "sudo apt install ubuntu-desktop". Enter **y** when prompted to.
 11. At the **Services to be restarted** screen, press **enter** and then type "Reboot" to restart the Virtual Machine. Once rebooted, ensure to log in again.
-12. Open a new web browser and navigate to **www.splunk.com**. In the top right corner of the page, click on **Free Splunk** and sign in or create an account. 
+12. Open a new web browser and navigate to **www.splunk.com**. In the top right corner of the page, click on **Free Splunk** and sign in or create an account. Once logged in, in the top left, click on the **Products** drop down menu and then select **Splunk Enterprise**. Click on the **Free Trial** button and select the **.tgz** file.
+
+<p align="center">
+Splunk Homepage: <br/>
+<img src="https://i.imgur.com/2WTArFY.png"/> 
+
+13. Open a brand new terminal and navigate to the **Downloads** directory by typing in "cd Downloads". Now type "ls -l" to ensure the downloaded splunk file is there.
+
+<p align="center">
+Splunk File in Downloads Directory: <br/>
+<img src="https://i.imgur.com/kHgQUTa.png"/>  
+
+14. Next type "tar xvzf" and then the name of the downloaded splunk file and then press **Enter**. Once done, type "cd splunk", and then "cd bin" to change into the **splunk/bin** directory. Now splunk will be started be typing "./splunk start".
+15. Press **Spacebar** until prompted to enter "y" to continue. Now enter a administrator username and password of any choosing. Once done the followin screen should appear.
+
+<p align="center">
+Splunk installation finished: <br/>
+<img src="https://i.imgur.com/vJNc9co.png"/>  
 <!--
  ```diff
 - text in red
