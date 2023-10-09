@@ -306,6 +306,14 @@ Splunk File in Downloads Directory: <br/>
 <p align="center">
 Splunk installation finished: <br/>
 <img src="https://i.imgur.com/vJNc9co.png"/>  
+
+16. In a web browser, type in **splunk:8000** and then log into the splunk interface using the login credentials that was just created. A **Splunk** instance has now been created.
+
+<p align="center">
+Splunk Instance <br/>
+<img src="https://i.imgur.com/VbqXOgr.png"/>  
+
+
 <!--
  ```diff
 - text in red
