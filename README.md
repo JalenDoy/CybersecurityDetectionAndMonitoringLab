@@ -314,12 +314,37 @@ Splunk Instance <br/>
 <img src="https://i.imgur.com/VbqXOgr.png"/>  
 
 <h2>Installing Universal Forwarder:</h2>
+
 1. Start by booting up the Splunk machine and navigate to **Downloads/Splunk/Bin** Directory and type "./splunk start" to start **Splunk**. 
 2. When **Splunk** is started. Access **Splunk** by typing in "splunk:8000" into a web browser and sign in. Once signed in, in the top right click on **Settings** and then **Forwarding and Receiving**. 
 3. Click on **Configure Recieving** and then select **New Recieving Port** in the top right. Type in "9997" and then click **Save** when asked to enter a port to listen on. 
 4. Click on **Settings** in the top right and then click on **Indexes**. Click on **New Index** in the top right and then enter the index name as "wineventlog". Scroll to the bottom and click **Save**. 
-5. Open the Domain Controller machine and navigate to https://www.splunk.com/en_us/download/universal-forwarder.html. 
+5. Open the Domain Controller machine and navigate to https://www.splunk.com/en_us/download/universal-forwarder.html. (It may be easier to use Google Chrome). Once at the Splunk website, login. 
+6. Download the 64-bit file that supports Windows 10, Windows 11, and Windows Server. Once downloaded navigate to the **Downloads** folder and double click the splunk forwarder. Check the **License Agreement** box and ensure that **An on-premises Splunk Enterprise Instance** option is selected and then click **Customize Options**
 
+<p align="center">
+Universal Forwarder Correct File <br/>
+<img src="https://i.imgur.com/zmxan4y.png"/>  
+
+7. Click **Next** and set the username and password the same as the **Splunk** instance. Set the **Hostname or IP** of the **Deployment Server** to the IP address of the **Splunk** instance and enter "8089". Do the same for the **Receiving Indexer** but use "9997" instead. Click **Next** and then **Install**. When it is done click **Finish**.
+8. Go back to the **Splunk** instance and then click on **Services** and on the left hand side select **Add Data**. Under **Available Host(s)** click the domain that was created and enter "Domain Controller" as the **New Server Class Name**. Click **Next"**. 
+
+<p align="center">
+Select Forwarders <br/>
+<img src="https://i.imgur.com/hv2iahQ.png"/> 
+
+9. Click on **Local Event Logs** and select all of the available items (Application, ForwardedEvents, Security, Setup, System) and make sure they transfer over to Selected Items. Click **Next**.
+10. Under **Default** drop down menu, select **wineventlog**. Click **Review** and ensure the following setups are selected and then click **Submit**.
+
+<p align="center">
+Review Settings <br/>
+<img src="https://i.imgur.com/GkLWBSW.png"/> 
+
+11. Click **Start Searching**. Now the lab is complete and is your own playground to learn different aspects of cybersecurity.
+
+<p align="center">
+Finished Configuration of Splunk and the Cybersecurity Detection and Monitoring Lab <br/>
+<img src="https://i.imgur.com/krWcusU.png"/> 
 
 <!--
  ```diff
