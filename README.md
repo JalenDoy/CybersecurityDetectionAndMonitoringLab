@@ -313,6 +313,13 @@ Splunk installation finished: <br/>
 Splunk Instance <br/>
 <img src="https://i.imgur.com/VbqXOgr.png"/>  
 
+<h2>Installing Universal Forwarder:</h2>
+1. Start by booting up the Splunk machine and navigate to **Downloads/Splunk/Bin** Directory and type "./splunk start" to start **Splunk**. 
+2. When **Splunk** is started. Access **Splunk** by typing in "splunk:8000" into a web browser and sign in. Once signed in, in the top right click on **Settings** and then **Forwarding and Receiving**. 
+3. Click on **Configure Recieving** and then select **New Recieving Port** in the top right. Type in "9997" and then click **Save** when asked to enter a port to listen on. 
+4. Click on **Settings** in the top right and then click on **Indexes**. Click on **New Index** in the top right and then enter the index name as "wineventlog". Scroll to the bottom and click **Save**. 
+5. Open the Domain Controller machine and navigate to https://www.splunk.com/en_us/download/universal-forwarder.html. 
+
 
 <!--
  ```diff
