@@ -4,6 +4,10 @@
 Project consists of building a small enterprise network utilizing pfSense, Security Onion, Splunk, and an active directory environment to simulate a live network. The purpose of this homelab is to learn the configuration process of various cybersecurity tools and to practice cybersecurity techniques relating to areas such as Incident Respone, Threat Detection, and Vulnerability Expoitation. The user has the option of experiancing what it is like to be on the Red Team, Blue Team, and even Purple Team while learning and developing the skills that pertain the respected team and its roles. 
 <br />
 
+<p align="center">
+Home Lab Network: <br/>
+<img src="https://i.imgur.com/08YUlFo.png"/>
+
 <h2>Cybersecurity Technologies Used</h2>
 
 - <b>pfSense</b>
@@ -12,6 +16,7 @@ Project consists of building a small enterprise network utilizing pfSense, Secur
 - <b>Splunk Unvierseral Forwarder</b>
 - <b>Windows Domain Controller</b>
 - <b>Windows Event Forwarder</b>
+- <b>VMware Workstation Pro 17</b>
 
 <h2>Operating Systems Used</h2>
 
@@ -35,6 +40,7 @@ Project consists of building a small enterprise network utilizing pfSense, Secur
     - 2GB Ram
     - 6 Network Adapters (Clicked "customize hardware", "add", and then select "Network Adapter")
 6. After 5 Network adapters were added, connected each one to a VMnet by number. Network Adapter 2 connected to VMnet2, Network Adapter 3 connected to VMnet3, and so on. 
+
 <p align="center">
 Linking the Network Adapters to VMnet(s): <br/>
 <img src="https://i.imgur.com/nAhOl5o.png"/>
