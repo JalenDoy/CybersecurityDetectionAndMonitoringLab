@@ -7,12 +7,20 @@ Project consists of a simple PowerShell script that walks the user through "zero
 
 <h2>Languages and Utilities Used</h2>
 
-- <b>PowerShell</b> 
-- <b>Diskpart</b>
+- <b>pfSense</b>
+- <b>Security Onion</b>
+- <b>Splunk</b>
+- <b>Splunk Unvierseral Forwarder</b>
+- <b>Windows Domain Controller</b>
+- <b>Windows Event Forwarder</b>
 
 <h2>Environments Used </h2>
 
-- <b>Windows 10</b> (21H2)
+- <b>Windows 10</b>
+- <b>Windows Server 2019</b>
+- <b>Ubuntu Desktop</b>
+- <b>Ubuntu Server</b>
+- <b>Kali Linux</b>
 
 <h2>Lab Walk-Through:</h2>
 
