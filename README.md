@@ -1,11 +1,10 @@
 # <h1>Cybersecurity Detection and Threat Monitoring Lab</h1>
 
 <h2>Description</h2>
-Project consists of a simple PowerShell script that walks the user through "zeroing out" (wiping) any drives that are connected to the system. The utility allows you to select the target disk and choose the number of passes that are performed. The PowerShell script will configure a diskpart script file based on the user's selections and then launch Diskpart to perform the disk sanitization.
+Project consists of building a small enterprise network utilizing pfSense, Security Onion, Splunk, and an active directory environment to simulate a live network. The purpose of this homelab is to learn the configuration process of various cybersecurity tools and to practice cybersecurity techniques relating to areas such as Incident Respone, Threat Detection, and Vulnerability Expoitation. The user has the option of experiancing what it is like to be on the Red Team, Blue Team, and even Purple Team while learning and developing the skills that pertain the respected team and its roles. 
 <br />
 
-
-<h2>Languages and Utilities Used</h2>
+<h2>Cybersecurity Technologies Used</h2>
 
 - <b>pfSense</b>
 - <b>Security Onion</b>
@@ -14,13 +13,13 @@ Project consists of a simple PowerShell script that walks the user through "zero
 - <b>Windows Domain Controller</b>
 - <b>Windows Event Forwarder</b>
 
-<h2>Environments Used </h2>
+<h2>Operating Systems Used</h2>
 
-- <b>Windows 10</b>
-- <b>Windows Server 2019</b>
 - <b>Ubuntu Desktop</b>
 - <b>Ubuntu Server</b>
 - <b>Kali Linux</b>
+- <b>Windows 10</b>
+- <b>Windows Server 2019</b>
 
 <h2>Lab Walk-Through:</h2>
 
